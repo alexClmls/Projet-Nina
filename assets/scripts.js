@@ -1,15 +1,18 @@
-$(document).ready(function() {
-    $('.gallery').mauGallery({
-        columns: {
-            xs: 1,
-            sm: 2,
-            md: 3,
-            lg: 3,
-            xl: 3
-        },
-        lightBox: true,
-        lightboxId: 'myAwesomeLightbox',
-        showTags: true,
-        tagsPosition: 'top'
+let filters = document.querySelectorAll("#filters li");
+
+for(let filter of filters) {
+    filter.addEventListener("click", function(){
+        let tag = this.id;
+        let images = document.querySelectorAll("#gallery img");
+
+        for(let image of images){
+            image.classList.replace("active", "inactive");
+            image.parentElement.style.display = "none";
+
+            if (tag in image.dataset || tag === "tous"){
+                image.classList.replace("inactive", "active");
+                image.parentElement.style.display = "block";
+            }
+        }
     });
-});
+}
