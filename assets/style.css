@@ -16,7 +16,7 @@
 }
 @font-face {
   font-family: "Inter";
-  src: url("font/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  src: url("font/Inter-Regular.ttf") format("truetype");
 }
 
 body {
@@ -167,12 +167,9 @@ body {
 }
 .quote__text {
 	font-family: Spectral-light-ita;
-	font-style: italic;
-	font-weight: 300;
-
 }
 .quote__author {
-	font-family: Spectral-extra-ita;
+	font-family: Spectral;
 	font-weight: 800;
 	font-size: 22px;
 }
