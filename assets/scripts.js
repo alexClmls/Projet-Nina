@@ -80,8 +80,7 @@ function changeImage(direction) {
   }
 
   const lightboxImg = document.getElementById('lightboxImg');
-  const caption = document.getElementById('caption');
 
   lightboxImg.src = galleryImages[currentImageIndex].src;
-  caption.textContent = galleryImages[currentImageIndex].alt;
+  lightboxImg.alt = "Contenu de l'image affichée dans la modale au clic"
 }
