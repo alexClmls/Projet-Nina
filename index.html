@@ -6,9 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
-	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet"> -->
 </head>
 <body>
 <div class="top-header">
@@ -96,7 +93,7 @@
 	<div class="container py-3">
 		<div class="gallery">
 			<ul id="filters" class="my-4 tags-bar nav nav-pills">
-	            <li id="tous" class="nav-item"><span class="nav-link">Tous</span></li>
+	            <li id="tous" class="nav-item active"><span class="nav-link">Tous</span></li>
 	            <li id="concert" class="nav-item"><span class="nav-link">Concert</span></li>
 	            <li id="entreprises" class="nav-item"><span class="nav-link">Entreprises</span></li>
 	            <li id="mariages" class="nav-item"><span class="nav-link">Mariages</span></li>
@@ -131,7 +128,19 @@
 	        		<img data-entreprises class="gallery-item img-fluid active" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="mateus campos" />
 	        	</div>    
 	        </div>
-		</div>	
+		</div>
+		<div id="lightbox" class="modal fade show">
+		  <span class="close" onclick="closeLightbox()">&times;</span>
+		  	<div class="modal-dialog">
+			  <div class="modal-content">
+				  <div class="modal-body">
+				    <span class="prev" onclick="changeImage(-1)"><</span>
+				    <img id="lightboxImg" class="lightbox-content img-fluid">
+				    <span class="next" onclick="changeImage(1)">></span>
+				  </div>
+			  </div>
+			</div>
+		</div>
 	</div>
 	<div class="quote">
 		<figure>
