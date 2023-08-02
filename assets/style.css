@@ -27,7 +27,7 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
-.close {
+/*.close {
   color: white;
   font-size: 40px;
   font-weight: bold;
@@ -35,7 +35,7 @@ body {
   top: 15px;
   right: 30px;
   cursor: pointer;
-}
+}*/
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -139,6 +139,9 @@ body {
 .nav-pills .nav-link {
 	color: #000
 }
+.nav-link{
+	cursor: pointer;
+}
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
@@ -156,6 +159,9 @@ body {
 	height: 100%;
 	object-fit: cover;
 	padding: .5em;
+}
+#lightbox {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .prev, .next {
 	width: 30px;
