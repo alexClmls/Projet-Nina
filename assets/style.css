@@ -27,15 +27,7 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
-/*.close {
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  position: absolute;
-  top: 15px;
-  right: 30px;
-  cursor: pointer;
-}*/
+
 .top-header {
 	background-color: white;
 	position: sticky;
