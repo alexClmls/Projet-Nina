@@ -17,9 +17,8 @@ function createGalleryImage(tag, src, alt) {
 }
 
 // Récupérer le conteneur de la galerie
-const galleryContainer = document.querySelector('.gallery-items-row'); // Remplacez 'gallery' par l'ID de votre conteneur de galerie
+const galleryContainer = document.querySelector('.gallery-items-row');
 
-// Ajouter chaque image à la galerie en utilisant la fonction createGalleryImage
 const imagesData = [
   { tag: 'concert', src: './assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp', alt: 'aaron paul' },
   { tag: 'entreprises', src: './assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp', alt: 'ali morshedlou' },
@@ -30,7 +29,6 @@ const imagesData = [
   { tag: 'portrait', src: './assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp', alt: 'nino van prattenburg' },
   { tag: 'concert', src: './assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp', alt: 'austin neill' },
   { tag: 'entreprises', src: './assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp', alt: 'mateus campos' },
-  // Ajoutez d'autres images de la même manière
 ];
 
 imagesData.forEach(imageData => {
@@ -81,11 +79,7 @@ function openLightbox(img) {
   lightboxImg.src = img.src;
   lightbox.style.display = 'block';
 
-  // Mettre à jour la liste des images de la galerie pour la lightbox
-  // galleryImages = Array.from(galleryContainer.querySelectorAll('.gallery-item img'));
-
   currentImageIndex = galleryImages.indexOf(img);
-  console.log(currentImageIndex);
 }
 
 // Gestion des événements pour les flèches de navigation
@@ -99,19 +93,9 @@ nextBtn.addEventListener('click', function () {
   changeImage(1);
 });
 
-let count = 0
 // Fonction pour changer l'image dans la lightbox
 function changeImage(direction) {
-  count += 1;
-  if (count == 2) {
-    if (direction == 1) {
-      currentImageIndex += -1;
-    } else {
-      currentImageIndex += 1;
-    }
-    count = 0;
-  }
-  console.log(currentImageIndex);
+
   currentImageIndex += direction;
   let lightboxImg = document.getElementById('lightboxImg');
   lightboxImg.alt = "Contenu de l'image affichée dans la modale au clic";
