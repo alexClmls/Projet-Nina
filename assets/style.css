@@ -1,22 +1,18 @@
 @font-face {
   font-family: "Spectral-italic";
   src: url("font/Spectral-Italic.ttf") format("truetype");
-  font-display: swap;
 }
 @font-face {
   font-family: "Spectral-extra-ita";
   src: url("font/Spectral-ExtraBoldItalic.ttf") format("truetype");
-  font-display: swap;
 }
 @font-face {
   font-family: "Spectral-light-ita";
   src: url("font/Spectral-LightItalic.ttf") format("truetype");
-  font-display: swap;
 }
 @font-face {
   font-family: "Spectral";
   src: url("font/Spectral-Regular.ttf") format("truetype");
-  font-display: swap;
 }
 @font-face {
   font-family: "Inter";
