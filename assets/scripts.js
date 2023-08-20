@@ -61,8 +61,7 @@ for (let filter of filters) {
 
       if (tag === 'tous' || image.dataset[tag] !== undefined) {
         image.parentElement.style.display = 'block';
-        galleryImages.push(image);
-        
+        galleryImages.push(image); 
       }
     }
   });
@@ -122,7 +121,7 @@ function closeLightbox() {
   const lightbox = document.getElementById('lightbox');
   const modalBody = document.querySelector('.modal-body');
 
-  modalBody.style.display = 'none'; // Hide the modal body
+  modalBody.style.display = 'none';
   lightbox.style.display = 'none';
 }
 
